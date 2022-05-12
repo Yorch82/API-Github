@@ -5,11 +5,11 @@ const buscaUsuario = document.getElementById("buscaUsuario")
 
 function pintaUsuario (usuarioGit){ 
     axios.get(`https://api.github.com/users/${usuarioGit}`)
-    .then((res) => {
-        console.log(res)        
-        // let gitUser = res.data           
-        // pizarra.innerHTML = ""
-        // pizarra.innerHTML += `<img style="height: 50%; width: 50%; display: block;" src="${imagenPerreteRandom}"  alt="Card     image">`;
+    .then((res) => {               
+        let gitUser = res.data
+        console.log(gitUser)           
+        pizarra.innerHTML = ""
+        pizarra.innerHTML += `<h2>Usuario: ${gitUser.login}</h2><img src=${gitUser.avatar_url}</img>`;
     })
     .catch((err) => console.error(err));
 }
