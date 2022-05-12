@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Github</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1 id="navbars">API Github</h1>
+    </header>
+    <div class="bs-component">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Github</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              
+             
+                <input class="form-control me-sm-2" type="text" placeholder="Buscar" id="busca">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="buscaUsuario">Buscar</button>
+        
+            </div>
+          </div>
+        </nav>
+        <div class="canvas d-flex flex-wrap"></div>
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
